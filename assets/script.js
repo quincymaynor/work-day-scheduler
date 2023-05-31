@@ -2,6 +2,33 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
+var hr1El = $('#hour-1');
+var hr2El = $('#hour-2');
+var hr3El = $('#hour-3');
+var hr4El = $('#hour-4');
+var hr5El = $('#hour-5');
+var hr6El = $('#hour-6');
+var hr7El = $('#hour-7');
+var hr8El = $('#hour-8');
+var hr9El = $('#hour-9');
+var hr10El = $('#hour-10');
+var hr11El = $('#hour-11');
+var hr12El = $('#hour-12');
+var hr13El = $('#hour-13');
+var hr14El = $('#hour-14');
+var hr15El = $('#hour-15');
+var hr16El = $('#hour-16');
+var hr17El = $('#hour-17');
+var hr18El = $('#hour-18');
+var hr19El = $('#hour-19');
+var hr20El = $('#hour-20');
+var hr21El = $('#hour-21');
+var hr22El = $('#hour-22');
+var hr23El = $('#hour-23');
+var hr24El = $('#hour-24');
+var saveBtn = $('.saveBtn');
+
+
 setInterval(function() {
   var currentTime = dayjs(); 
   $('#currentDay').text(currentTime.format('dddd, MMM DD, YYYY hh:mm a'));
