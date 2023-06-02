@@ -26,6 +26,7 @@ var hr21El = $('#hour-21');
 var hr22El = $('#hour-22');
 var hr23El = $('#hour-23');
 var hr24El = $('#hour-24');
+var schedule = $('#schedule');
 
 
 $(function () {
@@ -36,12 +37,15 @@ $(function () {
     // time-block containing the button that was clicked? How might the id be
     // useful when saving the description in local storage?
 
-    hr1El.children('button').on('click', function(event) {
+    schedule.children().children('button').on('click', function(event) {
       event.preventDefault();
 
-      var text = $('#hour-1').children('textarea').text();
-      localStorage.setItem('hr1Item', text);
-      //local storage is not registering the text input rn...
+      var schdeuleText = $(this).siblings('.description').val();
+      var timeBlock = $(this).parent().attr('id')
+      console.log('timeBlock',timeBlock)
+      console.log('scheduleItem', schdeuleText)
+
+      localStorage.setItem(timeBlock, schdeuleText);
     })
 
     //
@@ -50,6 +54,8 @@ $(function () {
     // attribute of each time-block be used to conditionally add or remove the
     // past, present, and future classes? How can Day.js be used to get the
     // current hour in 24-hour time?
+
+    //MAKE THIS UPDATE REGULARLY
 
     for (i = 0; i < 24; i++) {
       var currentHour = dayjs().hour();
@@ -69,7 +75,11 @@ $(function () {
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
 
-    
+    localStorage.getItem(hr1El);
+    localStorage.getItem(hr2El);
+    localStorage.getItem(hr3El);
+    localStorage.getItem(hr4El);
+    localStorage.getItem(hr5El);
   
     //
     // TODO: Add code to display the current date in the header of the page.
