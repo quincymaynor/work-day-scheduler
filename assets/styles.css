@@ -8,7 +8,7 @@ body {
     border: none;
     resize: none;
     color: #000000;
-    border-left: 1px solid black;
+    border-left: 1px solid white;
     padding: 10px;
   }
   
@@ -25,32 +25,39 @@ body {
   }
   
   .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #a7a7a797;
+    color: #170229;
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: #d8bdcd;
     color: white;
   }
   
   .present {
-    background-color: #ff6961;
+    background-color: #f97ac6;
     color: white;
   }
   
   .future {
-    background-color: #77dd77;
+    background-color: #6fe2f7;
     color: white;
   }
   
   .saveBtn {
-    border-left: 1px solid black;
+    border-left: 1px solid white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06aed5;
+    background-color: #303030aa;
     color: white;
+  }
+
+  .saveBtn:hover {
+    border-color: transparent;
+    border-width: 3px;
+    background-color: #121212aa;
+    transition: all 0.3s ease-in-out;
   }
   
   .saveBtn i:hover {
