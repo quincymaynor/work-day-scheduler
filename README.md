@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 
-This website can be found at: https://quincymaynor.github.io/wor-day-scheduler
+This website can be found at: https://quincymaynor.github.io/work-day-scheduler
 and it can be used to organize tasks during the work day.
 
 ![Screenshot of the Work Day Scheduler](/assets/images/Work%20Day%20Scheduler%20Screenshot.png)
